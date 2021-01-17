@@ -44,7 +44,6 @@ func readNextBytes(file *os.File, number int32) []byte {
 	return bytes
 }
 
-
 func GetFileSize(filepath string) (int64, error) {
 	f, err := os.Open(filepath)
 	if err != nil {
@@ -156,5 +155,5 @@ func Playlog(path string, inputOnly bool, bothDir bool, colorify bool, maxdelay 
 }
 
 func main() {
-	Playlog("./tty/long", true, true, true, 3.0)
+	Playlog("./tty/LONG", true, true, true, 3.0)
 }
